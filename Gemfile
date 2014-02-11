@@ -26,7 +26,7 @@ group :development do
 end
 
 gem 'jquery-rails'
-
+gem 'bootstrap-sass'
 gem "twitter", "~> 5.5.1"
 gem 'ejs'
 # To use ActiveModel has_secure_password

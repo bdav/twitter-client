@@ -1,5 +1,6 @@
 class ApiController < ApplicationController
 
+respond_to :json
 require 'twitter'
 
   def retrieveTweets
