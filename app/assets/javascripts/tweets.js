@@ -27,7 +27,7 @@ $(document).on('click', '.expCol', function(e) {
     $(this).html('Collapse');
   }
   $(this).toggleClass("expanded");
-  $(this).closest('.expansion').toggle();
+  $(this).closest('.tweets').find('.expansion').toggle();
   $(this).parents('.tweets').toggleClass('expandedTweet');
   $(this).parents('.tweets').prev().toggleClass('aboveExpanded');
   $(this).parents('.tweets').next().toggleClass('belowExpanded');
