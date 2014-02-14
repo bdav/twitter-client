@@ -18,7 +18,8 @@ function loadMore(){
      } 
   })
 }
-$(document).on('click', '.expCol', function() {
+$(document).on('click', '.expCol', function(e) {
+  e.preventDefault();
   if ($(this).hasClass("expanded")){
     $(this).html('Expand');
   }
@@ -26,10 +27,10 @@ $(document).on('click', '.expCol', function() {
     $(this).html('Collapse');
   }
   $(this).toggleClass("expanded");
-  $(this).parents('.tweetBody').find('.expansion').toggle();
+  $(this).closest('.expansion').toggle();
   $(this).parents('.tweets').toggleClass('expandedTweet');
-  $($('.tweets')[($(this).parents('.tweets').index())-1]).toggleClass('aboveExpanded');
-  $($('.tweets')[($(this).parents('.tweets').index())+1]).toggleClass('belowExpanded');
+  $(this).parents('.tweets').prev().toggleClass('aboveExpanded');
+  $(this).parents('.tweets').next().toggleClass('belowExpanded');
  });
 $(window).scroll(function() {
    if($(window).scrollTop() + $(window).height() > $(document).height() - 100 && pageNumber < 7) {
