@@ -18,20 +18,21 @@ function loadMore(){
      } 
   })
 }
-$(document).on('click', '.expCol', function test() {
-  // if ($(this).hasClass('expanded')){
-  //   debugger
-  //   $(this).parents('.tweetBody').find('.expansion').css('display', 'none');
-  // }
-  // else {
-  //    $(this).parents('.tweetBody').find('.expansion').css('display', 'visible');
-  // }
-  $(this).parent('.tweetBody').find('.expansion').toggle();
-  $(this).toggleClass('expanded')
+$(document).on('click', '.expCol', function() {
+  if ($(this).hasClass("expanded")){
+    $(this).html('Expand');
+  }
+  else {
+    $(this).html('Collapse');
+  }
+  $(this).toggleClass("expanded");
+  $(this).parents('.tweetBody').find('.expansion').toggle();
+  $(this).parents('.tweets').toggleClass('expandedTweet');
+  $($('.tweets')[($(this).parents('.tweets').index())-1]).toggleClass('aboveExpanded');
+  $($('.tweets')[($(this).parents('.tweets').index())+1]).toggleClass('belowExpanded');
  });
 $(window).scroll(function() {
    if($(window).scrollTop() + $(window).height() > $(document).height() - 100 && pageNumber < 7) {
-       // $(window).unbind('scroll');
        pageNumber++
        loadMore();
    }
