@@ -1,1 +1,118 @@
-<div id='container'></div>
+<!-- <input id='userName' type='text'/>
+<input id='message' type='text'/>
+<button id='postTweet'>Submit</button>
+ -->
+ <div id='bgImage'>
+ 	<img id='campus' src='assets/stanfordcampus.jpg'>
+ </div>	
+ <div id='appContainer' class=''>
+ 	<div id='testContainer'></div>
+ 	<div id='widgetsColumn' class='col-md-3 col-md-offset-1'>
+ 		<div id='logoContainer' class='row'>	
+	 		<img id='logo' src='assets/stanfordLogo.gif'>
+	 	</div>
+	 	<div id='stanford' class='row'>Stanford on Twitter</div>
+	 	<div id='formContainer' class='row'>
+ 			<form role='form'>
+				<div class="input-group">
+					<span class="input-group-addon">@</span>
+					<input id='userName' type="text" class="form-control" placeholder="Username"/>
+				</div>
+				<textarea id='message' type="text"  rows='4' class="form-control" placeholder="Compose new Tweet..."></textarea>	
+ 					<ul id="toolbar" class='list-inline pull-right'>
+						<li><div id='tweetCounter'>140</div></li>
+						<li><button id='postTweet' class='btn btn-danger' type="submit">Tweet!</button></li>
+					</ul>	
+ 			</form>
+ 		</div>		
+	 	<div class='row'>	
+	 		<div class='widget'>
+	 			<div class='widgetHead'>Most Retweeted</div>
+	 			<div class='widgetRow row'>
+	 				<div id='topRetweeterImg' class='col-md-2'></div>
+	 				<div id='topRetweeterName' class='col-md-7 widgetRowName'></div>
+	 				<div id='topRetweeterNum' class='col-md-1 numTopTweets'></div> 
+	 			</div>
+	 			<div class='widgetRow row'>
+	 				<div id='secondRetweeterImg' class='col-md-2'></div>
+	 				<div id='secondRetweeterName' class='col-md-7 widgetRowName'></div>
+	 				<div id='secondRetweeterNum' class='col-md-1 numTopTweets'></div> 
+	 			</div>
+	 			<div class='widgetRow row'>
+	 				<div id='thirdRetweeterImg' class='col-md-2'></div>
+	 				<div id='thirdRetweeterName' class='col-md-7 widgetRowName'></div>
+	 				<div id='thirdRetweeterNum' class='col-md-1 numTopTweets'></div> 
+	 			</div>	 				 			
+	 		</div>
+	 	</div>
+	 	<div class='row'>	
+	 		<div class='widget'>
+	 			<div class='widgetHead'>Most Followers</div>
+	 			<div class='widgetRow row'>
+	 				<div id='topFollowedImg' class='col-md-2'></div>
+	 				<div id='topFollowedName' class='col-md-7 widgetRowName'></div>
+	 				<div id='topFollowedNum' class='col-md-1 numTopTweets'></div> 
+	 			</div>
+	 			<div class='widgetRow row'>
+	 				<div id='secondFollowedImg' class='col-md-2'></div>
+	 				<div id='secondFollowedName' class='col-md-7 widgetRowName'></div>
+	 				<div id='secondFollowedNum' class='col-md-1 numTopTweets'></div> 
+	 			</div>
+	 			<div class='widgetRow row'>
+	 				<div id='thirdFollowedImg' class='col-md-2'></div>
+	 				<div id='thirdFollowedName' class='col-md-7 widgetRowName'></div>
+	 				<div id='thirdFollowedNum' class='col-md-1 numTopTweets'></div> 
+	 			</div>	 				 	
+	 		</div>
+	 	</div>
+	 	<div class='row'>
+	 		<div class='widget'>
+	 			<div class='widgetHead'>Top Places</div>
+	 			<div class='widgetRow row'>
+	 				<div id='topPlaceName' class='col-md-8 col-md-offset-1 widgetRowName'></div>
+	 				<div id='topPlaceNum' class='col-md-1 numTopTweets'></div> 
+	 			</div>
+	 			<div class='widgetRow row'>
+	 				<div id='secondPlaceName' class='col-md-8 col-md-offset-1 widgetRowName'></div>
+	 				<div id='secondPlaceNum' class='col-md-1 numTopTweets'></div> 
+	 			</div>
+	 			<div class='widgetRow row'>
+	 				<div id='thirdPlaceName' class='col-md-8 col-md-offset-1 widgetRowName'></div>
+	 				<div id='thirdPlaceNum' class='col-md-1 numTopTweets'></div> 
+	 			</div>	 				 
+	 		</div>
+	 	</div>	
+	 	<div class='row'>	
+	 		<div class='widget'>
+	 			<div class='widgetHead'>Trends</div>
+	 			<div class='widgetRow row'>
+	 				<div id='topTrendName' class='col-md-8 col-md-offset-1 widgetRowName'></div>
+	 				<div id='topTrendNum' class='col-md-1 numTopTweets'></div> 
+	 			</div>
+	 			<div class='widgetRow row'>
+	 				<div id='secondTrendName' class='col-md-8 col-md-offset-1 widgetRowName'></div>
+	 				<div id='secondTrendNum' class='col-md-1 numTopTweets'></div> 
+	 			</div>
+	 			<div class='widgetRow row'>
+	 				<div id='thirdTrendName' class='col-md-8 col-md-offset-1 widgetRowName'></div>
+	 				<div id='thirdTrendNum' class='col-md-1 numTopTweets'></div> 
+	 			</div>	 				 
+	 		</div>
+	 	</div>	 		 		 		 	
+	</div>	
+	<div id='tweetsPlusSort' class='col-md-5 col-md-offset-1'>
+		<div class='row'>
+			<div id='sortContainer' class='belowExpanded 	row'>
+				<ul class='list-inline'>
+					<li id='sortBy'>Sort by:</li>
+					<li class='sortButton'><a href='#' class="sort" data-sort="timeStamp">Time</a></li>
+					<li class='sortButton'><a href='#' class="sort" data-sort="retweets">Retweets</a></li>
+					<li class='sortButton'><a href='#' class="sort" data-sort="favorites">Favorites</a></li>
+					<li class='sortButton'><a href='#' class="sort" data-sort="followers">Followers</a></li>
+					<li class='sortButton'><a href='#' class="sort" data-sort="totalTweets">Tweets</a></li>
+				</ul>	
+			</div>	
+			<div id='tweetsContainer' class='list'></div>
+		</div>	
+	</div>
+</div>

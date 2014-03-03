@@ -15,20 +15,10 @@
 .tweets{
 	margin-top:1px;
 	background-color:white;
-	padding-top:10px;
-}
-#container{
-	width:40%;
-	margin-left:auto;
-	margin-right:auto;
-	border-radius:10px;
 	padding:10px;
 }
 body{
 	background-color:#8C1515;
-}
-.tweets:first-child{
-	border-radius:10px 10px 0px 0px;
 }
 .tweets:last-child{
 	border-radius:0px 0px 10px 10px;
@@ -36,7 +26,7 @@ body{
 .tweetRows{
 	margin-bottom:7px;
 }
-.followers{
+.fol{
 	margin-left:10px;
 	padding-left:10px;
 	border-left-width:1px;
@@ -56,4 +46,137 @@ body{
 }
 .belowExpanded{
 	border-radius: 10px 10px 0px 0px;
+}
+.aboveExpanded.belowExpanded{
+	border-radius:10px;
+}
+.aboveExpanded.expandedTweet{
+	border-radius:10px;
+}
+.belowExpanded.expandedTweet{
+	border-radius:10px;
+}
+.aboveExpanded.belowExpanded.expandedTweet{
+	border-radius:10px;
+}
+li.timeStamp{
+	display:none;
+}
+.expNum{
+		font-size:20px;
+		color:#999999;
+}
+#sortContainer{
+	background-color:white;	
+	padding:10px;
+	height:35px;
+}
+#tweetsPlusSort{
+	padding:10px;
+	margin-bottom:25px;
+}
+#tweetsContainer{
+	position:relative;
+}
+#sortBy{
+	padding-left:18px;
+	font-size:17px;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-right-color:lightgrey;
+}
+.sortButton{
+	border-right-style:solid;
+	border-right-width:1px;
+	border-right-color:lightgrey;
+}
+.widget{
+	background-color:white;
+	border-radius:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.widgetHead{
+	text-align:center;
+	padding:5px;
+	font-size:23px;
+}
+.widgetRow{
+	border-top-style:solid;
+	border-top-width:1px;
+	border-top-color:lightgrey;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-left:0px;
+	margin-right:0px;
+	line-height:4em;
+}
+#widgetsColumn{
+	position:relative;
+	top:-100px;
+}
+#campus{
+	width:100%;
+	z-index:-1;
+	top:-200px;
+	position:fixed;
+}
+#appContainer{
+	position:relative;
+	top:150px;
+}
+#logo{
+	height:105px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+#logoContainer{
+	border-radius:10px 10px 0px 0px;
+	background-color:white;
+	padding:10px;
+}
+#stanford{
+	background-color:white;
+	padding:10px;
+	text-align:center;
+	font-size:20px;
+	border-top-style:solid;
+	border-top-width:1px;
+	border-top-color:lightgrey;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:lightgrey;
+	color:grey;
+}
+#message{
+	width:100%;
+	margin-top:5px;
+}
+#postTweet{
+	margin-top:5px;
+}
+#formContainer{
+	border-radius:0px 0px 10px 10px;
+	padding:5px;
+	margin-bottom:20px;
+	background-color:white;
+}
+#tweetCounter{
+	margin-right:10px;
+	position:relative;
+	top:7px;
+	color:lightgrey;
+}
+.numTopTweets{
+	border-left-style:solid;
+	border-left-color:lightgrey;
+	border-left-width:1px;
+	color:grey;	
+	font-size:20px;
+}
+.widgetRowName{
+	font-size:17px;
 }

@@ -8,21 +8,21 @@
 				<li><%= status.user.name %></li>
 				<li class='small'><%= "@"+status.user.screen_name %></li>
 				<li class='small'><%= month + " " + day%></li>
+				<li class='timeStamp'><%= status.created_at %></li>
 				<li class='small'><%= status.user.location %></li>
 			</ul>
 		</div>
-		<div class='row'>
-			<div class='tweetRows'><%= status.text %>
-			</div>
-		</div>
+		<div class='row tweetRows'><%= status.text %></div>
 		<div class='row tweetRows'><a href='#' class='small expCol'>Expand</a></div>
 		<div class='row expansion'>
+			<hr>
 			<ul class='list-inline tweetRows'>
-				<li>Retweets:<br><span style='font-size:20px; color:#999999'><%= status.retweet_count %></span></li>
-				<li>Favorite:<br><span style='font-size:20px; color:#999999'><%= status.favorite_count %></span></li>
-				<li class='followers'>Followers:<br><span style='font-size:20px; color:#999999'><%= status.user.followers_count %></span>
+				<li><div class="expLabel">Retweets:</div><div class='retweets expNum'><%= status.retweet_count %></div></li>
+				<li><div class="expLabel">Favorites:</div><div class='favorites expNum'><%= status.favorite_count %></div></li>
+				<li class='fol'><div class='expLabel'>Followers:</div><div class='followers expNum'><%= status.user.followers_count %></div>
 				</li>
-				<li>Tweets:<br><span style='font-size:20px; color:#999999'><%= status.user.statuses_count %></span></li>
+				<li><div class='expLabel'>Tweets:</div><div class='totalTweets expNum'><%= status.user.statuses_count %>
+				</div></li>
 			</ul>
 		</div>
 	</div>

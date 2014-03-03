@@ -13,6 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require underscore
+//= require backbone
 //= require list
+//= require moment-with-langs
 //= require_tree ./templates
 //= require_tree .
+
