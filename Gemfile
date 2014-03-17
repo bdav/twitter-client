@@ -29,7 +29,7 @@ gem 'jquery-rails', "~> 2.1.3"
 gem 'bootstrap-sass'
 gem "twitter", "~> 5.5.1"
 gem 'ejs', "~> 1.1.1"
-gem "rails-backbone", "~> 0.9.10"
+gem "backbone-rails", "~> 1.1.0"
 # gem "momentjs-rails", "~> 2.5.1"
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

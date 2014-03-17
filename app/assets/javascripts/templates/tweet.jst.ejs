@@ -1,4 +1,4 @@
-<div id='tweet<%= idNum %>'class='tweets row' data-tweetId='<%=idNum%>'>
+<div class='tweets row'>
 	<div class='col-md-2'>
 		<img class='profilePic' src='<%= status.user.profile_image_url %>'>
 	</div>
@@ -7,7 +7,6 @@
 			<ul class='list-inline tweetRows h5'>
 				<li><%= status.user.name %></li>
 				<li class='small'><%= "@"+status.user.screen_name %></li>
-				<li class='small'><%= month + " " + day%></li>
 				<li class='timeStamp'><%= status.created_at %></li>
 				<li class='small'><%= status.user.location %></li>
 			</ul>
